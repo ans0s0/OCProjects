@@ -1,3 +1,38 @@
 body {
 	font-family: 'raleway','Roboto', sans-serif;
 }
+
+.header {
+    display:flex;
+    
+}
+.recherche {
+    display:flex;
+    
+}
+
+.filtres {
+    display:flex;
+    
+}
+
+.hotels1 {
+    display:flex;
+}
+
+.hotels2 {
+    display:flex;
+}
+
+.hebergements {
+    display:flex;
+}
+
+.activites {
+    display:flex;
+}
+
+.footer {
+    display:flex;
+}
+    
