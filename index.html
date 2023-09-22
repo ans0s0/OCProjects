@@ -8,33 +8,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 
     <script src="https://kit.fontawesome.com/e7c06ffab6.js" crossorigin="anonymous"></script>
 
 </head>
 
-<header> 
+<header width="1440px" height="79px"> 
 
   <div class="header">
-    <div>
-  <img src="images/Booki.png" alt=""/>
-    </div>  
+
+    <div class="logo">
+
+      <img src="images/Booki.png" height="19px" alt="Logo_Booki"/>
+    
+    </div>
+
       
-      <nav>
-          <ul >
-              <li>
-                  Hébergements
-              </li>
-              <li>
-                  Activités
-              </li>
-          </ul>
+      <nav class="menu">
+                      
+        <div><a href="">Hébergements</a></div>
+        <div><a href="">Activités</a></div>
+                
       </nav>
       
+
   </div>
 
 </header>
@@ -45,16 +48,22 @@
   <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
     <p>En plein centre-ville ou en pleine nature</p>
 
+<!--fin zone de recherche--> 
+
   <div class="recherche">
-    <i class="fa-solid fa-location-dot"></i>
+    
+    <div class="localisation"> <i class="fa-solid fa-location-dot"></i> </div>
+    
     
     <form action="" method="get">
-      <input type="text" name="recherche" id="recherche" value="Marseille, FRance"></input>
-      <button type="submit">Rechercher</button>
+      <input type="text" name="recherche" class="recherche2" value=" Marseille, France"></input>
+      <button type="submit" class="button">Rechercher</button>
     </form>
-   
+    
+
   </div>
 
+  <!--zone de recherche--> 
   <div class="filtres">
 
     <div class="filtres1">

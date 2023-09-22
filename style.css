@@ -33,20 +33,64 @@ text-decoration:none;
 }
 a:hover {
 
-	color: blue;
+	color: #0065FC;
 	text-decoration: none;
-	border-top: 2px solid blue;
+	border-top: 2px solid #0065FC;
 	padding-top: 20px;
 	
 }
 
+/*Fin header
+Début body*/
+
+/*Début zone recherche*/
+
 .recherche {
     display:flex;
-    
+    width:377px;
+	height: 45px;
 }
+
+
+.localisation{
+	background-color: #f2f2f2;
+	width: 46px;
+	height: 45px;
+	text-align: center;
+	border-radius: 15px 0px 0px 15px;
+	
+}
+
+
+.recherche2 {
+    height: 45px;
+    border-right: 0px;
+	border-left: 0px;
+	line-height: middle;
+	text-align: center;
+	font-weight: bold;
+	border-color: #f2f2f2;
+	border-style: solid;
+}
+
+.button{
+	width: 132px;
+	height: 45px;
+	background-color:#0065FC;
+	border-radius: 0px 15px 15px 0px;
+	border-left: 0px;
+	border-color: #f2f2f2;
+	border-style: solid;
+	margin-left: -4px;
+	color: white;
+	font-weight: bold;
+}
+
+/*Fin zone recherche*/
 
 .filtres {
     display:flex;
+	margin-top: 20px;
     
 }
 
@@ -65,6 +109,9 @@ a:hover {
 .activites {
     display:flex;
 }
+
+/*Fin body
+Début footer*/
 
 .footer {
     display:flex;
