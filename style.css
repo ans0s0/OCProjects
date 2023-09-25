@@ -77,8 +77,8 @@ Début body*/
 	width: 132px;
 	height: 45px;
 	background-color:#0065FC;
-	border-radius: 0px 15px 15px 0px;
-	border-left: 0px;
+	border-radius: 0px 25px 25px 0px;
+	border-right :0px;
 	border-color: #f2f2f2;
 	border-style: solid;
 	margin-left: -4px;
@@ -86,29 +86,134 @@ Début body*/
 	font-weight: bold;
 }
 
+
 /*Fin zone recherche*/
 
+/*Début filtres*/
 .filtres {
+	width: 758px;
     display:flex;
 	margin-top: 20px;
+	margin-right: 10px;
+	background-color: none;
+	line-height: middle;
+
     
+}
+.zonef{
+    font-weight: bold;
+	line-height: middle;
+}
+
+.button2{
+	width: 132px;
+	height: 45px;
+	background-color:transparent;
+	border-radius: 25px;
+	border-color: #d9d9d9;
+	border-style: solid;
+	margin-left: 5px;
+	color: black;
+	font-weight: bold;
+}
+
+.button2:hover {
+	background-color:#DEEBFF;
+
+}
+
+.infos{
+	width:24px;
+	height:24px;
+	border-color: #d9d9d9;
+	border-radius: 100%;
+	border-style: solid;
+	color:#0065FC;
+	text-align: center;
+	line-height: middle;
+}
+
+.leshotels{
+	width:871px;
+	height: 611,5px;
+	background-color:#f2f2f2;
+	border-radius:15px;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.populaires{
+	width:429px;
+	background-color:#f2f2f2;
+	border-radius:15px;
+	
+}
+
+
+.pop{
+    width:369px;
+	height:144px
+
 }
 
 .hotels1 {
     display:flex;
+	justify-content: space-between;
+	padding:30px;
 }
 
 .hotels2 {
     display:flex;
+	justify-content: space-between;
+	padding:30px;
+}
+
+.HebergementM{
+
+	background-color: white;
+	border-radius: 20px;
+	width: 250.33px;
+	border-style: solid;
+	border: 5px;
+	border-color: white;
+	
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	
+	
+}
+
+.HebergementM img {
+ 
+	width: 100%;
+	height: 124px;
+	object-fit :cover;
+	border-radius: 20px 20px 0px 0px;
+	
+	
+	
+}
+
+.HebergementM h3, p {
+ 
+	padding : 0px 15px 0px 15px;
+	
 }
 
 .hebergements {
     display:flex;
+	justify-content: space-between;
 }
 
 .activites {
     display:flex;
 }
+
+
+
+
+
+
+/*Fin filtres*/
 
 /*Fin body
 Début footer*/
