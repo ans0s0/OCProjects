@@ -16,12 +16,179 @@
 body {
     display: flex;
     justify-content: center;
+	width: 100%;
+}
+/****** Header ***********/
+
+
+.header {
+	width: 100%;
+	height: 79px;
+   }
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+   }
+
+.logo {
+	padding: 0px 50px 30px 50px;
+
 }
 
+.logo img {
+	height: 19px;
+
+}
+.menu {
+	width: 244px;
+	font-size: 16px;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding : 0px 50px 30px 50px;
+}
+
+.header-container a {
+color: black;
+text-decoration:none;
+
+}
+.header-container a:hover {
+
+	color: #0065FC;
+	text-decoration: none;
+	border-top: 2px solid #0065FC;
+	padding-top: 20px;
+	
+}
+
+/****** ZOne recherche *******/
+.search {
+    display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+    width:100%;
+	height: 281px;
+}
+
+.search-title {
+	margin:0px;
+}
+
+.fa-location-dot {
+	color: black;
+	text-align: center;
+	width: 14px;
+}
+
+.localisation{
+	width: 50px;
+	height:50px;
+	background-color: #F2F2F2;
+	border : 1px solid #F2F2F2;
+	border-top-left-radius: 25px ;
+	border-bottom-left-radius: 25px ;
+}
+
+.search-zone {
+    height: 47px;
+	border: 1px solid #f2f2f2;
+    border-right: 0px;
+	border-left: 0px;
+	line-height: middle;
+	text-align: center;
+	font-weight: bold;
+	margin-left: -3px;
+	
+}
+
+.button{
+	width: 132px;
+	height: 50px;
+	background-color:#0065FC;
+	border-top-right-radius: 25px ;
+	border-bottom-right-radius: 25px ;
+	border: 1px solid #0065FC;
+	margin-left: -4px;
+	color: white;
+	font-weight: bold;
+}
+
+
+
+/****** Début filtres ******/
+.filtres {
+	width: 758px;
+    display:flex;
+	margin-top: 20px;
+	margin-right: 10px;
+	background-color: none;
+	line-height: middle;
+  
+}
+
+.zonef{
+    font-weight: bold;
+	line-height: middle;
+	
+}
+
+.button2{
+	width: 132px;
+	height: 45px;
+	background-color:transparent;
+	border-radius: 25px;
+	border-color: #d9d9d9;
+	border-style: solid;
+	margin-left: 5px;
+	color: black;
+	font-weight: bold;
+}
+
+.button2:hover {
+	background-color:#DEEBFF;
+
+}
+
+.more {
+    display:flex;
+	width: 100%;
+	height: 45px;
+	align-items: center;
+
+}
+
+.fa-info {
+	
+	width: 4px;
+	height: 10px;
+	line-height: middle;
+	
+
+}
+
+.button3{
+	width: 24px;
+	height: 24px;
+	background-color:transparent;
+	border-radius: 100%;
+	border-color: #d9d9d9;
+	border-style: solid;
+	color: black;
+	font-weight: bold;
+
+}
+
+.disponibilities {
+	margin:10px;
+}
+
+/****** Conteneur principal ***********/
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 50px 50px;
     box-sizing: border-box;
 }
 
@@ -62,6 +229,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+	margin-top: 30px;
 }
 
 .hebergements-and-populaires section {
@@ -78,7 +246,7 @@ a {
 
 .hebergements-title {
     display: flex;
-    
+	
 }
 
 .hebergements-cards{
@@ -174,13 +342,18 @@ a {
 
 .activities {
     width: 100%;
-	padding:30px;
+	padding-top:30px;
 }
 
+.section-activities {
+    padding-left: 30px;
+}
 
 .activities-cards{
     display: flex;
     justify-content: space-between;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .activities-cards .card {
@@ -210,6 +383,7 @@ a {
 .activities-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
+	
 }
 
 .activities-cards .card-subtitle {
@@ -218,6 +392,32 @@ a {
 
 .activities-cards .card-rating {
     margin-bottom: 5px;
+}
+
+/****** Footer ***********/
+
+.footer-bloc {
+    display:flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 163px;
+	background-color: #F2F2F2;
+	margin-top: 50px;
+}
+
+.footer-part {
+width:33%;
+justify-content: center;
+padding-left: 20px;
+}
+
+.footer-part h3{
+	font-size:18px;
+	font-weight: bold;
+}
+
+.footer-part p{
+	font-size:16px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -255,6 +455,23 @@ a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+}
+
+@media (max-width: 1024px) {
+    .activities {
+		flex-direction: column;
+   		width:924px;
+    }
+
+
+    .activities-cards {
+        
+		flex-direction: row;
+		justify-content: space-between;
+		width:864px;
+       
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
